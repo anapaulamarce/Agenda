@@ -1,0 +1,12 @@
+br\com\agenda\model\Endereco.class
+br\com\agenda\controller\LoginController.class
+br\com\agenda\dao\TelefoneDAO.class
+br\com\agenda\filter\LoginFilter.class
+br\com\agenda\model\Contato.class
+br\com\agenda\dao\ContatoDAO.class
+br\com\agenda\controller\CadastroController.class
+br\com\agenda\model\Usuario.class
+br\com\agenda\model\Telefone.class
+br\com\agenda\controller\ContatoController.class
+br\com\agenda\dao\EnderecoDAO.class
+br\com\agenda\dao\UsuarioDAO.class

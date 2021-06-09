@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+	
+	<f:view encoding="UTF-8" />
+	
+	<h:head>
+		<title>Agenda</title>
+    </h:head>
+    
+    <h:body styleClass="cadastrar">
+    		<h:form id="formCadastrar" prependId="false">
+	    		<p:messages id="messages" showDetail="false" closable="true" />
+	    		
+		   		<h:panelGroup layout="block" styleClass="login_wrapper" >
+					<h:form>
+							<div>
+								<p:inputText value="#{cadastroController.usuario.login}" required="true" id="login" 
+								styleClass="form-control" maxlength="20"
+								placeholder="Login" requiredMessage="Preencha o seu login!"/>
+							</div>
+								
+							<div>
+								<p:password value="#{cadastroController.usuario.senha}" required="true" id="senha" 
+								styleClass="form-control" maxlength="20"
+								placeholder="Senha" feedback="true" requiredMessage="Preencha sua senha!"/>
+							</div>
+							
+							<div>
+								<p:inputText value="#{cadastroController.usuario.nome}" required="true" id="nome" 
+								styleClass="form-control" maxlength="20"
+								placeholder="Nome" requiredMessage="Preencha seu nome!"/>
+							</div>
+							
+							<div>
+								<p:inputText value="#{cadastroController.usuario.email}" required="true" id="email" 
+								styleClass="form-control" placeholder="E-mail" requiredMessage="Preencha seu e-mail!"/>
+							</div>
+							
+							<div>
+								<p:commandButton value="Cadastrar" 
+									styleClass="btn btn-default submit"
+									actionListener="#{cadastroController.cadastrar()}" 
+									ajax="false" />
+							</div>
+					</h:form>
+				</h:panelGroup>
+			</h:form>
+	 </h:body>
+</html>

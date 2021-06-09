@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Built-By: pauli
+Build-Jdk: 15.0.2
+Implementation-Title: agenda
+Implementation-Version: 1.0.0
+Implementation-Vendor-Id: br.com.agenda
+Created-By: Maven Integration for Eclipse
+
